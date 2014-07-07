@@ -1,5 +1,4 @@
 require 'uri'
-require 'open-uri'
 
 module Utils
   def self.get(url, params)

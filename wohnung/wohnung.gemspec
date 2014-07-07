@@ -20,5 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'open-uri'
+  spec.add_development_dependency 'mongo_mapper'
+  spec.add_development_dependency "bson_ext", "1.5.2"
+
 end
