@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rotev/wohnung
-  revision: 66d56bb57b226f3107d59721d581434613c6fcae
+  revision: eec691085c8e7aa9d8e3054822ed4f7db3bad0de
   specs:
     wohnung (0.0.1)
 
