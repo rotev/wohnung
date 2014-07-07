@@ -1,7 +1,13 @@
-require 'rest-open-uri'
+require 'open-uri'
+require_relative 'utils'
 
-class Wohnung::Extractor
-  def self.extract(url)
-    
+module Wohnung
+  class Extractor
+
+    EXTRACTOR_URL = "http://localhost:9000/"
+
+    def self.extract(url)
+      Utils.get(EXTRACTOR_URL, { url: url})
+    end
   end
 end
