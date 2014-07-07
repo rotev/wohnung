@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Wohnung::VERSION
   spec.authors       = ["Rotem Harel"]
   spec.email         = ["me@rotemharel.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Business logic for the Wohnung application.}
+  #spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
   spec.license       = "MIT"
 

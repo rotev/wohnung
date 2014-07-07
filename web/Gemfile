@@ -1,5 +1,9 @@
 source 'https://rubygems.org' 
 
+git 'https://github.com/rotev/wohnung' do
+  gem 'wohnung'
+end
+
 # sinatra
 gem 'sinatra'
 gem 'sinatra-contrib'
