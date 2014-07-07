@@ -1,0 +1,12 @@
+source 'https://rubygems.org' 
+
+# sinatra
+gem 'sinatra'
+gem 'sinatra-contrib'
+
+# mongodb
+gem 'mongo_mapper'
+
+gem 'bson_ext', '1.5.2'
+# the newer version of bson_ext throws an eror "undefined method `last' for nil:NilClass" when calling map_reduce
+# https://groups.google.com/forum/#!msg/mongomapper/V6SxD8zUhz4/yXPpzLkV0nMJ
