@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/rotev/wohnung
-  revision: eec691085c8e7aa9d8e3054822ed4f7db3bad0de
+  revision: 4c100759e3dd19b115bf9670e760ba0865b5f308
   specs:
-    wohnung (0.0.1)
+    wohnung_mongodb (0.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -54,4 +54,4 @@ DEPENDENCIES
   mongo_mapper
   sinatra
   sinatra-contrib
-  wohnung!
+  wohnung_mongodb!
