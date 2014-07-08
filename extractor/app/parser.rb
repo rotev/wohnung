@@ -13,7 +13,7 @@ class Parser
 
     result = if parser
               doc = Nokogiri::HTML(open(@url))
-              parser.parse_doc(doc)
+              parser.parse_doc(doc, @url)
             else
               {}
             end
