@@ -9,15 +9,15 @@ configure do
   mongo_server = '127.0.0.1'
   mongo_database = "wohnung_db"
 
-  WohnungMongodb.methods
-
   MongoMapper.connection = Mongo::Connection.new(mongo_server)
   MongoMapper.database = mongo_database
 end
 
 
 get '/' do
-  @wohnungs = Wohnung.all
+  puts WohnungMongodb.constants.inspect
+
+  @properties = Property.all
 
   erb :'home', layout: :layout
 end

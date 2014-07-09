@@ -6,3 +6,5 @@ gemspec
 git 'https://github.com/rotev/wohnung' do
   gem 'wohnung'
 end
+
+gem 'byebug'
