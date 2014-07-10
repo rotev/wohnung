@@ -2,6 +2,7 @@ require 'open-uri'
 require 'nokogiri'
 
 require_relative 'parsers/city_wohnen'
+require_relative 'parsers/air_bnb'
 
 class Parser
   def initialize(url)
@@ -18,12 +19,13 @@ class Parser
               {}
             end
 
-    result.merge(url: url)
+    result.merge(url: @url)
   end
 
   private
 
   def get_parser(url)
     return CityWohnen if url.include? 'city-wohnen'
+    return AirBnb if url.include? 'airbnb'
   end
 end

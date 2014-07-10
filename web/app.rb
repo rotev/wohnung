@@ -1,6 +1,7 @@
 require "sinatra"
 require "sinatra/reloader"
 require "mongo_mapper"
+require "wohnung"
 require "wohnung_mongodb"
 
 set :port, 4568
@@ -15,9 +16,7 @@ end
 
 
 get '/' do
-  puts WohnungMongodb.constants.inspect
-
-  @properties = Property.all
+  @properties = WohnungMongodb::Property.all
 
   erb :'home', layout: :layout
 end

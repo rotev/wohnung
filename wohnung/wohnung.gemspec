@@ -22,5 +22,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rspec', "3.0.0"
   spec.add_dependency 'mongo_mapper', "0.12.0"
   spec.add_dependency "bson_ext", "1.5.2"
+  spec.add_dependency "json", "1.8.1"
 
 end
